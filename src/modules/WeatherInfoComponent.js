@@ -21,6 +21,7 @@ const Location = styled.span`
   font-size: 28px;
   font-weight: bold;
 `;
+
 const Condition = styled.span`
   margin: 20px auto;
   text-transform: capitalize;
@@ -29,6 +30,7 @@ const Condition = styled.span`
     font-size: 28px;
   }
 `;
+
 const WeatherInfoLabel = styled.span`
   margin: 20px 25px 10px;
   text-transform: capitalize;
@@ -37,11 +39,13 @@ const WeatherInfoLabel = styled.span`
   font-weight: bold;
   font-size: 14px;
 `;
+
 const WeatherIcon = styled.img`
   width: 100px;
   height: 100px;
   margin: 5px auto;
 `;
+
 const WeatherContainer = styled.div`
   display: flex;
   width: 100%;
@@ -59,6 +63,7 @@ const WeatherInfoContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
 `;
+
 const InfoContainer = styled.div`
   display: flex;
   margin: 5px 10px;
@@ -66,6 +71,7 @@ const InfoContainer = styled.div`
   justify-content: space-evenly;
   align-items: center;
 `;
+
 const InfoIcon = styled.img`
   width: 36px;
   height: 36px;
@@ -79,6 +85,11 @@ const InfoLabel = styled.span`
     font-size: 12px;
     text-transform: capitalize;
   }
+`;
+
+const Note = styled.p`
+  margin: 15px auto;
+  font-size: 14px;
 `;
 
 const WeatherInfoComponent = (props) => {
@@ -120,7 +131,7 @@ const WeatherComponent = (props) => {
                 <WeatherInfoComponent name={"wind"} value={weather?.wind?.speed}/>
                 <WeatherInfoComponent name={"pressure"} value={weather?.main?.pressure}/>
             </WeatherInfoContainer>
-
+            <Note>please refresh the page to search other cities</Note>
         </>
     );
 };

@@ -70,6 +70,12 @@ const KnowMore = styled.span`
   text-decoration: none;
 `;
 
+const Link = styled.a`
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+`;
+
 function App() {
   const [city, updateCity] = useState();
   const [weather, updateWeather] = useState();
@@ -93,7 +99,7 @@ function App() {
       )}
     </Container>
     <KnowMore>
-        <p>Created By Harsh | <a href="https://github.com/harshmehta2/Weather-App" target="_blank">Source Code</a></p>
+        <p>Created by <strong>Harsh</strong> | <Link href="https://github.com/harshmehta2/Weather-App" target="_blank"><strong>Github Repo</strong></Link></p>
     </KnowMore>
     </>
   );
