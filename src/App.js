@@ -38,7 +38,7 @@ const Container = styled.div`
   border: 0px solid;
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
-  padding 20px 10px;
+  padding 20px 0px;
   width: 350px;
   background: white;
   font-family: Montserrat;
