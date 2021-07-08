@@ -93,7 +93,7 @@ function App() {
       )}
     </Container>
     <KnowMore>
-        <p>Created By Harsh | <a href="https://google.com" target="_blank">Source Code</a></p>
+        <p>Created By Harsh | <a href="https://github.com/harshmehta2/Weather-App" target="_blank">Source Code</a></p>
     </KnowMore>
     </>
   );
